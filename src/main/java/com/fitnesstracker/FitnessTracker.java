@@ -29,7 +29,7 @@ public class FitnessTracker extends Application {
     public void start(Stage stage) throws IOException {
         Scene scene = createScene();
         scene.getStylesheets().add(Objects.requireNonNull(getClass().getResource("style.css")).toExternalForm());
-        stage.setTitle("Fitness Tracker");
+        stage.setTitle("Train Max");
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();
@@ -39,12 +39,12 @@ public class FitnessTracker extends Application {
         VBox box = new VBox();
         box.getStyleClass().add("body");
 
-        Label appLabel = new Label("Heart Rate Tracker");
+        Label appLabel = new Label("TrainMax");
         appLabel.setAlignment(Pos.CENTER);
         appLabel.setMaxWidth(Double.MAX_VALUE);
         appLabel.getStyleClass().add("app-label");
 
-        Label description = new Label("...train for maximum benefit");
+        Label description = new Label("know you THR, train for maximum benefit");
         description.setAlignment(Pos.CENTER);
         description.setMaxWidth(Double.MAX_VALUE);
         description.getStyleClass().add("app-description");
@@ -138,7 +138,7 @@ public class FitnessTracker extends Application {
         HRrestValue = new TextField("50");
         HRrestValue.getStyleClass().add("property-value-label");
 
-        Label intensityLabel = new Label("Intensity");
+        Label intensityLabel = new Label("Intensity of workout");
         intensityLabel.getStyleClass().add("property-label");
         intensities = new ComboBox<>();
         intensities.setMaxWidth(Double.MAX_VALUE);

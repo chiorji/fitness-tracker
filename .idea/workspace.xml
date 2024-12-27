@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46632763-d36f-4710-a56e-2ab096ee1fc7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fitnesstracker/ResultModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/fitnesstracker/FitnessTracker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fitnesstracker/FitnessTracker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fitnesstracker/FitnessTrackerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fitnesstracker/FitnessTrackerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/fitnesstracker/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/fitnesstracker/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
