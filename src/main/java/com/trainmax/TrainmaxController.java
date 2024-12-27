@@ -1,13 +1,10 @@
-package com.fitnesstracker;
-
-import javafx.fxml.FXML;
-import javafx.scene.control.Label;
+package com.trainmax;
 
 import java.math.RoundingMode;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 
-public class FitnessTrackerController {
+public class TrainmaxController {
 
     public static ArrayList<String> getIntensities() {
         ArrayList<String> intense = new ArrayList<>();

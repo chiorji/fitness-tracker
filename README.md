@@ -1,4 +1,5 @@
-# TrainMax
+# Train max
+**know your heart rate, train for maximum benefit**
 
 ###### Target Heart Rate (THR)
 A desired range of heart rate reached during aerobic exercise which enables one's heart and 

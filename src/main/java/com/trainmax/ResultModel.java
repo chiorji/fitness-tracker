@@ -1,4 +1,4 @@
-package com.fitnesstracker;
+package com.trainmax;
 
 public class ResultModel {
     private final double unestimated, estimated;

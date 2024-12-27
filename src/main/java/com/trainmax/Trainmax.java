@@ -1,9 +1,8 @@
-package com.fitnesstracker;
+package com.trainmax;
 
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
-import javafx.fxml.FXMLLoader;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
@@ -11,13 +10,16 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.scene.layout.*;
+import javafx.scene.layout.ColumnConstraints;
+import javafx.scene.layout.GridPane;
+import javafx.scene.layout.StackPane;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.util.Objects;
 
-public class FitnessTracker extends Application {
+public class Trainmax extends Application {
 
     private static final int APP_WIDTH = 375;
     private static final int APP_HEIGHT = 475;
@@ -29,7 +31,7 @@ public class FitnessTracker extends Application {
     public void start(Stage stage) throws IOException {
         Scene scene = createScene();
         scene.getStylesheets().add(Objects.requireNonNull(getClass().getResource("style.css")).toExternalForm());
-        stage.setTitle("Train Max");
+        stage.setTitle("Train max");
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();
@@ -39,12 +41,12 @@ public class FitnessTracker extends Application {
         VBox box = new VBox();
         box.getStyleClass().add("body");
 
-        Label appLabel = new Label("TrainMax");
+        Label appLabel = new Label("Train max");
         appLabel.setAlignment(Pos.CENTER);
         appLabel.setMaxWidth(Double.MAX_VALUE);
         appLabel.getStyleClass().add("app-label");
 
-        Label description = new Label("know you THR, train for maximum benefit");
+        Label description = new Label("know your heart rate, train for maximum benefit");
         description.setAlignment(Pos.CENTER);
         description.setMaxWidth(Double.MAX_VALUE);
         description.getStyleClass().add("app-description");
@@ -66,9 +68,9 @@ public class FitnessTracker extends Application {
                 double HRrest = Double.valueOf(HRrestValue.getText());
                 int intense = Integer.valueOf(intensities.getValue());
 
-                ResultModel result = FitnessTrackerController.calculateTHR(athleteAge, HRmax, HRrest, intense);
-                normalTHRValue.setText(Double.valueOf(result.getThrUnestimated()).toString());
-                estimatedTHROutputValue.setText(Double.valueOf(result.getThrEstimated()).toString());
+                ResultModel result = TrainmaxController.calculateTHR(athleteAge, HRmax, HRrest, intense);
+                normalTHRValue.setText(Double.valueOf(result.getThrUnestimated()).toString() + " bpm");
+                estimatedTHROutputValue.setText(Double.valueOf(result.getThrEstimated()).toString() + " bpm");
             }
         });
 
@@ -125,26 +127,26 @@ public class FitnessTracker extends Application {
 
         Label ageLabel = new Label("Age");
         ageLabel.getStyleClass().add("property-label");
-        age = new TextField("40");
+        age = new TextField("20");
         age.getStyleClass().add("property-value-label");
 
-        Label HRmaxLabel = new Label("Heart Rate Maximum");
+        Label HRmaxLabel = new Label("Maximum heart rate");
         HRmaxLabel.getStyleClass().add("property-label");
         HRmaxValue = new TextField("180");
         HRmaxValue.getStyleClass().add("property-value-label");
 
-        Label HRrestLabel = new Label("Heart Rate Resting");
+        Label HRrestLabel = new Label("Resting heart rate");
         HRrestLabel.getStyleClass().add("property-label");
         HRrestValue = new TextField("50");
         HRrestValue.getStyleClass().add("property-value-label");
 
-        Label intensityLabel = new Label("Intensity of workout");
+        Label intensityLabel = new Label("Workout intensity(%)");
         intensityLabel.getStyleClass().add("property-label");
         intensities = new ComboBox<>();
         intensities.setMaxWidth(Double.MAX_VALUE);
         intensities.setMinHeight(40);
         intensities.getStyleClass().add("text-field");
-        intensities.getItems().addAll(FitnessTrackerController.getIntensities());
+        intensities.getItems().addAll(TrainmaxController.getIntensities());
         intensities.setValue(intensities.getItems().get(0));
 
         gridPane.addRow(0, ageLabel, age);

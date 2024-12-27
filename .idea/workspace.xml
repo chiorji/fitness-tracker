@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46632763-d36f-4710-a56e-2ab096ee1fc7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/fitnesstracker/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/fitnesstracker/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fitnesstracker/FitnessTracker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trainmax/Trainmax.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fitnesstracker/FitnessTrackerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trainmax/TrainmaxController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fitnesstracker/ResultModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trainmax/ResultModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/fitnesstracker/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/trainmax/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,28 +33,57 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2qlWgyQAHMNn05waeyUVRVSAzgZ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master"
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/chigbogu.orji/IdeaProjects/trainmax",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.14942528",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
   <component name="RunManager">
-    <configuration name="Fitness" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="com.fitnesstracker.FitnessTracker" />
-      <module name="fitness-tracker" />
+    <configuration name="trainmax" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="18" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.trainmax.Trainmax" />
+      <module name="trainmax" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="trainmax" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="trainmax" />
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>

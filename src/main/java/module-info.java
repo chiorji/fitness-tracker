@@ -1,8 +1,8 @@
-module com.fitnesstracker {
+module com.trainmax {
     requires javafx.controls;
     requires javafx.fxml;
 
 
-    opens com.fitnesstracker to javafx.fxml;
-    exports com.fitnesstracker;
+    opens com.trainmax to javafx.fxml;
+    exports com.trainmax;
 }
